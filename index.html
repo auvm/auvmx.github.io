@@ -4,86 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auvm's page</title>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-    </style>
-    <title>Curriculum vitae</title>
-</head>
-<body style="font-family: Helvetica,  Arial, sans-serif; margin: 0; background-color: silver;">
-    <header style="background-color:#dec000; color: black; text-align: center; padding: 16px;">
-        <h1 style="display: inline-block;width: 400px; font-family: 'Permanent Marker', cursive;; font-weight: 800;"> C.V. de Ángel Velasco</h1>
-        <h2 style="display: inline-block;width: 400px; font-weight: 200;">FullStack Web Developer</h2>
-    </header>
-    <div class="" style="background-color: cadetblue; color: black; text-align: center; padding: 10px;">
-        Over 6 years of experience bulding web aplicacitons, as a Frontend and Backend Developer.
-    </div>
-    <section>
-        <div style="width: 900px; margin-right: auto; margin-left: auto; ">
-            <div>
-                <div style="display: inline-block;width: 68%; vertical-align: buttom;">
-                    <h3 style="font-size: 36px;font-weight: 700;">Educación</h3>
-                    <div>
-                        <dl>
-                            <dt style="font-size: medium; text-transform: capitalize; margin-bottom: 12px; margin-top: 12px;">Ingeniero en Informática</dt>
-                            <dd>2018-2022 Unidad profesional interdisciplinaria de ingeniería y ciencias sociales y administrativas "UPIICSA"</dd>
-                            <dt style="font-size: medium; text-transform: capitalize; margin-bottom: 12px; margin-top: 12px;">Técnico en redes de computo</dt>
-                            <dd>2015-2018 Centro de estudios tecnologicos Nº1 Walter Cross Buchanan "CET N°1"</dd>
-                        </dl>
-                    </div>
-                </div>
-                
-                <div style="display: inline-block;width: 25%; margin-top: 60px; margin-left: 10px;">
-                    <img src="./pictures/feynman.jpg" alt="Foto de perfil" width="300px">
-                </div>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        :root{
+            --cool_orange: #EB6440;
+            --cool_yellow: #FECC01;
+            --teal: #497174;
+            --gray: #D6E4E5;
+            --snow: #EFF5F5;
+        }
 
-            </div>
-            <div>
-                <h3 style="font-size: 36px;font-weight: 700; margin-top: 30px;">Experiencia Profesional</h3>
-                <div>
-                    <dl>
-                        <dt style="font-size: medium; text-transform: capitalize; margin-bottom: 12px; margin-top: 12px;">Servicio social</dt>
-                        <dd>2018. Operación de apoyo y conservación de los talleres de la U.A.A.T.E en el CET N°1</dd>
-                    </dl> 
-                </div>
-            </div>
-            <div>
-                <h3 style="font-size: 36px;font-weight: 700; margin-top: 50px;">Cursos tomados más recientes</h3>
+        body{
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+            
+        }
+
+
+    
+        figure{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+        }
+
+        #profile_picture{
+            border-radius: 50%;
+            border: 4px solid var(--teal);
+        }
+
+        #name_logo{
+            padding-left: 40px;
+        }
+
+        .left_container{
+            padding-right: 40px;
+            width: 350px;
+        }
+
+        #line{
+            align-self: center;
+            height: 350px;
+            width: 5px;
+            background-color: var(--teal);
+            border-radius: 99px;
+            margin: 0 20px;
+        }
+        
+        .right_container{
+            padding-left: 40px;
+            width: 350px;
+        }
+
+        
+        dt{
+            font-size: large;
+            font-weight: bold;
+            padding-top: 25px;
+            padding-bottom: 15px;
+        }
+
+        #social_icons{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        #social_dt{
+            padding-bottom: 15px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        
+        <figure>
+            <img id="profile_picture" src="./pictures/photo.jpg" alt="Foto de perfil" width="180px">
+            <img id="name_logo" src="./pictures/name_2.png" alt="Ángel Velasco - FullStack web developer" width="400px">
+        </figure>
+
+    </header>
+    
+
+    <div class="container">
+        <div class="left_container">
+            <h3>Datos Personales</h3>
+            <dl>
+                <dt>Nombre:</dt>
+                <dd>Ángel Uriel Velasco Mejía</dd>
+                <dt>Fecha de nacimiento:</dt>
+                <dd>13 de Junio del 2000</dd>
+                <dt>Correo de contacto:</dt>
+                <dd>angelurielvelascom@gmail.com</dd>
+                <dt id="social_dt">
+                    Redes sociales:
+                </dt>
+                <div id="social_icons">
+                    <dd><a href="https://www.instagram.com/auvmx_13/">
+                        <img src="./icons/instagram_icon.png" alt="Instagram"
+                        width="40px">
+                    </a></dd>
+                    <dd><a href="https://github.com/auvm">
+                        <img src="./icons/github-svg-icon-3.png" alt="Github"
+                        width="40px">
+                    </a></dd>
+                    <dd><a href="www.linkedin.com/in/ángel-uriel-velasco-mejía-862ab2127">
+                        <img src="./icons/linkedin_icon.png" alt="Linkedin"
+                        width="40px">
+                    </a></dd>
+                    <dd><a href="https://platzi.com/p/angelurielvelascom/">
+                        <img src="./icons/platzi_icon.png" alt="Platzi"
+                        width="40px" style="border-radius: 10%;">
+                    </a></dd>
+                    
+                </div>               
                 
-                <h4 style="font-size: medium; margin-bottom: 12px; margin-top: 12px;">Platzi</h4>
-                <ul>
-                    <li>Curso Definitivo de HTML y CSS</li>
-                    <li>Audiocurso para Desbloquear tu creatividad</li>
-                    <li>Curso introducción a C#</li>
-                </ul>
-                <h4 style="font-size: medium; margin-bottom: 12px; margin-top: 12px;">CódigoFacilito</h4>
-                <ul>
-                    <li>Curso Profesional Desarrollo Web</li>
-                </ul>
+            </dl>
             
-            </div>
-            <div>
-                <h3 style="font-size: 36px;font-weight: 700; margin-top: 50px;">Redes Sociales</h3>
-                <ul>
-                    <li><a href="https://github.com/auvmx" target="_blank">Github</a></li>
-                    <li><a href="https://twitter.com/FTSM32" target="_blank">Twitter</a></li>
-                    <li><a href="https://platzi.com/p/angelurielvelascom/" target="_blank">Platzi</a></li>
-                </ul>
-            
-            </div>
-            <div>
-                <h3 style="font-size: 36px;font-weight: 700; margin-top: 50px;">Constancias de Participación</h3>
-                <div>
-                    <dl>
-                        <dt style="font-size: medium; text-transform: capitalize; margin-bottom: 12px; margin-top: 12px;">Constancia</dt>
-                        <dd>02/10/2019.Participación en el evento AZURE ACADEMIC DAY 2019</dd>
-                        <dt style="font-size: medium; text-transform: capitalize; margin-bottom: 12px; margin-top: 12px;">Constancia</dt>
-                        <dd>23/11/2017. Presentación en la 6ª Jornada de investigación y difusión de la ciencia y la tecnología de la ponencia "Simulador de resistencia y resistividad"</dd>
-                        <dt style="font-size: medium; text-transform: capitalize; margin-bottom: 12px; margin-top: 12px;">Constancia</dt>
-                        <dd>24/05/2017. Presentación en la 5ª Jornada de investigación y difusión de la ciencia y la tecnología de la ponencia "Estructura de un programa en Lenguaje C"</dd>
-                    </dl> 
-                </div>
-            </div>
         </div>
-    </section>
+
+        <span id="line">
+             <!-- no borrar -->
+        </span>
+
+        <div class="right_container">
+            <dl>
+                <dt>Estudios</dt>
+                    <dd>
+                        <img src="./icons/ipn_logo.png" alt="IPN logo" width="13px">
+                        <img src="./icons/upiicsa_logo.png" alt="UPIICSA logo" width="20px">
+                        Ingeniería Informática IPN - UPIICSA.</dd>
+        
+                    <dd>
+                        <img src="./icons/ipn_logo.png" alt="IPN logo" width="13px">    
+                        <img src="./icons/cet_logo.jpeg" alt="CET logo" width="20px">
+                        Técnico en redes de cómputo
+                        IPN - CET N°1 "Walter Cross Buchanan".</dd>
+
+                <dt>Experiencia Profesional</dt>
+                    <dd>¡Hey! ¿Qué te parece si me ayudas a llenar este espacio? 😄</dd>
+                <dt>Ultimos cursos tomados</dt>
+                    <dd>Platzi 2022.Curso de Frontend Developer</dd>
+                    <dd>Platzi 2022.Curso de ECMAScript 6+</dd>
+                    <dd>Platzi 2022.NPM: Gestión de paquetes y dependencias en JavaScript</dd>
+                <!-- <dt>Constancias de Participación</dt>
+                    <dd>Asociación Mexicana Empresarial de Software Libre A.C. Constancia de Participación
+                        en el evento Azure Academic Day 2019.
+                    </dd>
+                    <dd>CET Nº1 2017. Presentación en la 6ª Jornada de investigación y difusión de la ciencia y la tecnología de la ponencia "Simulador de resistencia y resistividad"</dd>
+                    <dd>CET Nº1 2017. Presentación en la 5ª Jornada de investigación y difusión de la ciencia y la tecnología de la ponencia "Estructura de un programa en Lenguaje C"</dd>
+                </dl> -->
+            
+        </div>
+    </div>
+
 </body>
 </html>
