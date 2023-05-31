@@ -1,87 +1,33 @@
 :root{
-    --cool_orange: #EB6440;
-    --cool_yellow: #FECC01;
-    --teal: #497174;
-    --gray: #D6E4E5;
-    --snow: #EFF5F5;
+
+    /* https://colorhunt.co/palette/025464e57c23e8aa42f8f1f1 */
+    --blue_dark: #0035A9;
+    --orange: #F57D18;
+    --light_orange: #F5DF18;
+    --ligh_pink: #F8F1F1;
+    
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
     margin: 0;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
-    
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
+    display: block;
+    height: 40px;
+    background-color: var(--blue_dark);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: left;
+}
+
+.menu{
+    display: inline-block;
+}
+
+.menu img{
+    height: 25px;
+    width:25px;
     
-    
-}
-
-
-
-figure{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-
-#profile_picture{
-    border-radius: 50%;
-    border: 4px solid var(--teal);
-}
-
-#name_logo{
-    padding-left: 40px;
-}
-
-.left_container{
-    padding-right: 40px;
-    width: 350px;
-}
-
-#line{
-    align-self: center;
-    height: 350px;
-    width: 5px;
-    background-color: var(--teal);
-    border-radius: 99px;
-    margin: 0 20px;
-}
-
-.right_container{
-    padding-left: 40px;
-    width: 350px;
-}
-
-
-dt{
-    font-size: large;
-    font-weight: bold;
-    padding-top: 25px;
-    padding-bottom: 15px;
-}
-
-#social_icons{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-#social_dt{
-    padding-bottom: 15px;
 }
