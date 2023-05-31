@@ -1,9 +1,10 @@
 :root{
 
     /* https://colorhunt.co/palette/025464e57c23e8aa42f8f1f1 */
-    --blue_dark: #0035A9;
-    --orange: #F57D18;
-    --light_orange: #F5DF18;
+    --blue_dark: #068DA9;
+    --light_blue: #ECF8F9;
+    --brown: #7E1717;
+    --orange: #E55807;
     --ligh_pink: #F8F1F1;
     
 }
@@ -15,26 +16,71 @@ body{
 }
 
 header{
-    height: 60px;
+    height: 55px;
     background-color: var(--blue_dark);
 
 
 }
 
-.menu{
+
+/* begins menu icon  */
+
+.menu_icon{
     display: inline-block;
 }
 
-.menu img{
-    height: 35px;
-    width:35px;
+.menu_icon img{
     position: absolute;
     left: 10px;
     
 }
 
+/* begins menu display */
+
+.menu_container{
+    position: absolute;
+    /* z-index: 100; */
+    
+    
+    
+    height: 100vh;
+    width: 70vw;
+    max-width: 320px;
+
+    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light_blue);
+    font-weight: bold;
+    border-radius: 0 0 3% 0;
+    
+}
+
+
+.options_list_menu a{
+    text-decoration: none;
+    color: var(--blue_dark);
+    
+}
+
+.options_list_menu li{
+    list-style: none;
+    padding: 24px 0;
+    font-size: larger;
+}
+
+
+
+
+
+/* begins main container */
 .container{
     padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.presentation_image {
+    max-width: 380px;
 }
 
 dt{
@@ -48,15 +94,15 @@ dd{
     font-size: large;
     margin-top: 15px;
 }
+.social_icons a{
+    display: block;
+}
 
 .social_icons{
     display: flex;
-    flex-direction: row;
-
+    justify-content: space-evenly;
 }
 
-.social_icons a{
-    align-items: end;
-
+.inactive{
+    display: none;
 }
-

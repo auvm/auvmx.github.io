@@ -21,18 +21,30 @@
 
     <header>
         
-        <div class="menu">
-            <img src="./assets/icons/menu.png" alt="Menu">
+        <div class="menu_icon">
+            <img src="./assets/icons/menu.png" alt="Menu" width="28px">
         </div>
-    
         
     </header>
+    
+    <div class="menu_container inactive">
+        <!-- <img src="./assets/icons/cancelar.png" alt="close" width="22px" class="close_icon_menu"> -->
+        <ul class="options_list_menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Educación</a></li>
+            <li><a href="#">Experiencia</a></li>
+         </ul>
+
+    </div>
+
     
 
     <div class="container">
         
         <h2>Datos Personales</h2>
 
+        <img src="./assets/pictures/name_1.png" alt="Ángel Uriel Velasco Mejía - Web Developer" class="presentation_image">
          
         <dl>
             <dt>Nombre:</dt>
@@ -43,27 +55,27 @@
 
             <dt id="social_dt">
                 Redes sociales:
-            </dt>               
+            </dt>
             <dd>
-                <div id="social_icons">
-                    <a href="https://github.com/auvm"  target="_blank">
-                        <img src="./assets/icons/github-svg-icon-3.png" alt="Github"
-                        width="40px">
-                    </a>
-                    <a href="https://www.linkedin.com/in/%C3%A1ngel-uriel-velasco-mej%C3%ADa-862ab2127"  target="_blank">
-                        <img src="./assets/icons/linkedin_icon.png" alt="Linkedin"
-                        width="40px">
-                    </a>
-                    <a href="https://platzi.com/p/angelurielvelascom/"  target="_blank">
-                        <img src="./assets/icons/platzi_icon.png" alt="Platzi"
-                        width="40px" style="border-radius: 10%;">
-                    </a>
-                </div>
+                
             </dd>
+            <div class="social_icons">
+                <a href="https://github.com/auvm"  target="_blank">
+                    <img src="./assets/icons/github-svg-icon-3.png" alt="Github"
+                    width="40px">
+                </a>
+                <a href="https://www.linkedin.com/in/%C3%A1ngel-uriel-velasco-mej%C3%ADa-862ab2127"  target="_blank">
+                    <img src="./assets/icons/linkedin_icon.png" alt="Linkedin"
+                    width="40px">
+                </a>
+                <a href="https://platzi.com/p/angelurielvelascom/"  target="_blank">
+                    <img src="./assets/icons/platzi_icon.png" alt="Platzi"
+                    width="40px" style="border-radius: 10%;">
+                </a>
+            </div>              
         </dl>     
-        
-
        
     </div>
-
+    
+    <script src="./script/main.js"></script>
 </body>
