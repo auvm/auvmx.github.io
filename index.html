@@ -19,28 +19,27 @@
 </head>
 <body>
 
+    <!-- <span class="gotop">
+        <img src="./assets/icons/flecha-arriba.png" alt="top" width="24px">
+    </span> -->
     <header>
         
         <div class="menu_icon">
             <img src="./assets/icons/menu.png" alt="Menu" width="28px">
         </div>
-        
+        <div class="menu_container inactive">
+            <!-- <img src="./assets/icons/cancelar.png" alt="close" width="22px" class="close_icon_menu"> -->
+            <ul class="options_list_menu">
+                <li><a href="#personal_info_section" class="list_item_menu">Inicio</a></li>
+                <li><a href="#projects_info_section" class="list_item_menu">Proyectos</a></li>
+                <li><a href="#educatio_info_section" class="list_item_menu">Educación</a></li>
+                <li><a href="#experience_info_section" class="list_item_menu">Experiencia</a></li>
+                <li><a href="#courses_info_section" class="list_item_menu">Cursos</a></li>
+             </ul>
+    
+        </div>
     </header>
     
-    <div class="menu_container inactive">
-        <!-- <img src="./assets/icons/cancelar.png" alt="close" width="22px" class="close_icon_menu"> -->
-        <ul class="options_list_menu">
-            <li><a href="#personal_info_section">Inicio</a></li>
-            <li><a href="#projects_info_section">Proyectos</a></li>
-            <li><a href="#educatio_info_section">Educación</a></li>
-            <li><a href="#experience_info_section">Experiencia</a></li>
-            <li><a href="#courses_info_section">Cursos</a></li>
-         </ul>
-
-    </div>
-
-    
-
     <div class="container">
         <div class="info_section" id="personal_info_section">
             <h2 class="section_title">Datos Personales</h2>
@@ -73,21 +72,30 @@
                         <img src="./assets/icons/platzi_icon.png" alt="Platzi"
                         width="40px" style="border-radius: 10%;">
                     </a>
+                    <a href="https://codigofacilito.com/usuarios/auvmx"  target="_blank">
+                        <img src="./assets/icons/codigofacilito.png" alt="CódigoFacilito"
+                        width="40px" style="border-radius: 10%;">
+                    </a>
                 </div>              
             </dl>     
-        </div>
-        
+        </div>    
         
         <div class="info_section" id="educatio_info_section">
             <h2 class="section_title">Educación</h2>
             <div class="card">
-                <img src="./assets/pictures/UPIICSA_PHOTO.jpeg" alt="UPIICSA" width="100%">
-                <a href="https://www.upiicsa.ipn.mx/" class="card_title"><h3>UPIICSA - IPN</h3></a>
+                
+                <a href="https://www.upiicsa.ipn.mx/">
+                    <img src="./assets/pictures/UPIICSA_PHOTO.jpeg" alt="UPIICSA" width="100%">
+                </a>
+                <h3 class="card_title">UPIICSA - IPN</h3>
                 <p>Ingeniería en informática. 2018-2023 Pasante.</p>
             </div>
             <div class="card">
-                <img src="./assets/pictures/CET_PHOTO.jpeg" alt="CET Nº1" width="100%">
-                <a href="https://www.cet1.ipn.mx/" class="card_title"><h3>CET Nº1 "Walter Cross Buchanan" - IPN</h3></a>
+                
+                <a href="https://www.cet1.ipn.mx/">
+                    <img src="./assets/pictures/CET_PHOTO.jpeg" alt="CET Nº1" width="100%">
+                </a>
+                <h3 class="card_title">CET Nº1 "Walter Cross Buchanan" - IPN</h3>
                 <p>Técnico en redes de cómputo. 2015-2018 Pasante.</p>
             </div>
         </div>
@@ -95,20 +103,29 @@
         <div class="info_section" id="projects_info_section">
             <h2 class="section_title">Proyectos</h2>
             <div class="card">
-                <img src="./assets/pictures/YARDSALE_PHOTO.png" alt="YardSale Page" width="100%">
-                <a href="https://auvm.github.io/curso-frontend-developer-javascript-practico/" class="card_title"><h3>Yard Sale</h3></a>
+                
+                <a href="https://auvm.github.io/curso-frontend-developer-javascript-practico/">
+                    <img src="./assets/pictures/YARDSALE_PHOTO.png" alt="YardSale Page" width="100%">
+                </a>
+                <h3 class="card_title">Yard Sale</h3>
                 <p>Página de simulación de un e-comerce en versión de escritorio y mobile responsive - 2022.</p>
                 
             </div>
             <div class="card">
-                <img src="./assets/pictures/BOLETIN_PHOTO.png" alt="Pizzas's Ranking" width="100%">
-                <a href="https://auvm.github.io/boletines/" class="card_title"><h3>Pizzas's Ranking</h3></a>
+                
+                <a href="https://auvm.github.io/boletines/" >
+                    <img src="./assets/pictures/BOLETIN_PHOTO.png" alt="Pizzas's Ranking" width="100%">
+                </a>
+                <h3 class="card_title">Pizzas's Ranking</h3>
                 <p>Página con un ranking de pizzas, version de escritorio y mobile responsive - 2022.</p>
                 
             </div>
             <div class="card">
-                <img src="./assets/pictures/LANDING_PHOTO.png" alt="Landing page" width="100%">
-                <a href="https://auvm.github.io/auvm-landing/#" class="card_title"><h3>Landing Demo</h3></a>
+                
+                <a href="https://auvm.github.io/auvm-landing/#">
+                    <img src="./assets/pictures/LANDING_PHOTO.png" alt="Landing page" width="100%">
+                </a>
+                <h3 class="card_title">Landing Demo</h3>
                 <p>Landing page demo consultando una API de Youtube con Javascript - 2022.</p>
                 
             </div>
@@ -117,14 +134,20 @@
         <div class="info_section" id="experience_info_section">
             <h2 class="section_title">Experiencia Laboral</h2>
             <div class="card">
-                <img src="./assets/pictures/NEZA_PHOTO.jpeg" alt="H. Ayuntamiento de Nezahualcóyotl - SARE" width="100%">
-                <a href="https://www.neza.gob.mx/#gsc.tab=0" class="card_title"><h3>H. Ayuntamiento de Nezahualcóyotl - SARE</h3></a>
+                
+                <a href="https://www.neza.gob.mx/#gsc.tab=0">
+                    <img src="./assets/pictures/NEZA_PHOTO.jpeg" alt="H. Ayuntamiento de Nezahualcóyotl - SARE" width="100%">
+                </a>
+                    <h3 class="card_title">H. Ayuntamiento de Nezahualcóyotl - SARE</h3>
                 <p>Practicas profesionales de 150 horas en el Sistema de Apertura Rápida de Empresas "SARE" de la dirección de Fomento Económico de Cd. Nezahualcóyotl - 2023.</p>
                 
             </div>
             <div class="card">
-                <img src="./assets/pictures/CET_BIBLIO_PHOTO.jpeg" alt="CET Nº 1 - Operación de apoyo y conservación de los talleres de la U.A.A.T.E." width="100%">
-                <a href="https://www.cet1.ipn.mx/" class="card_title"><h3>CET Nº 1 - Operación de apoyo y conservación de los talleres de la U.A.A.T.E.</h3></a>
+                
+                <a href="https://www.cet1.ipn.mx/">
+                    <img src="./assets/pictures/CET_BIBLIO_PHOTO.jpeg" alt="CET Nº 1 - Operación de apoyo y conservación de los talleres de la U.A.A.T.E." width="100%">
+                </a>
+                <h3 class="card_title">CET Nº 1 - Operación de apoyo y conservación de los talleres de la U.A.A.T.E.</h3>
                 <p>Servicio social para la creación de contenido didáctico para impartir cursos de programación a alumnos y profesores del CET Nº 1 - 2017.</p>
                 
             </div>
@@ -133,25 +156,30 @@
         <div class="info_section" id="courses_info_section">
             <h2 class="section_title">Últimos cursos de actualización tomados</h2>
             <div class="card">
-                <img src="./assets/pictures/PLATZI_PHOTO.png" alt="Página de Platzi" width="100%">
-                <a href="https://platzi.com/home" class="card_title"><h3>Plataforma Platzi</h3></a>
+                <a href="https://platzi.com/home">
+                    <img src="./assets/pictures/PLATZI_PHOTO.png" alt="Página de Platzi" width="100%">
+                </a>
+                
+                <h3 class="card_title">Plataforma Platzi</h3>
                 <ul>
                     <li>Curso de Frontend Developer - 2022.</li>
                     <li>Curso de ECMAScript 6+ - 2022.</li>
                     <li>NPM: Gestión de paquetes y dependencias en JavaScript - 2022.</li>
                     <li>Curso de Introducción a C# con .NET 3.1 - 2022.</li>
                     <li>Curso de Java SE Orientado a Objetos - 2022.</li>
-                    <li><a href="https://platzi.com/p/angelurielvelascom/">Más...</a></li>
+                    <li><a href="https://platzi.com/p/angelurielvelascom/" class="mini_link">Más...</a></li>
                 </ul>
                 
             </div>
             <div class="card">
-                <img src="./assets/pictures/CODIGOFACILITO_PHOTO.png" alt="Página de CódigoFacilito" width="100%">
-                <a href="https://codigofacilito.com/" class="card_title"><h3>Plataforma CódigoFacilito</h3></a>
+                <a href="https://codigofacilito.com/">
+                    <img src="./assets/pictures/CODIGOFACILITO_PHOTO.png" alt="Página de CódigoFacilito" width="100%">
+                </a>
+                <h3 class="card_title">Plataforma CódigoFacilito</h3>
                 <ul>
                     <li>Curso Profesional Desarrollo Web - 2023.</li>
                     <li>Curso de CSS - 2023.</li>
-                    <li><a href="https://codigofacilito.com/usuarios/auvmx">Más...</a></li>
+                    <li><a href="https://codigofacilito.com/usuarios/auvmx" class="mini_link">Más...</a></li>
                 </ul>
                 
             </div>
