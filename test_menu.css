@@ -1,0 +1,26 @@
+.menu{
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    font-weight: bold;
+}
+
+.close_icon_menu{
+    align-self: flex-end;
+    margin: 30px 30px 0 0;
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 2px;
+}
+.options_list_menu a{
+    /* text-decoration: none; */
+    color: white;
+}
+
+.options_list_menu li{
+    list-style: none;
+    padding-top: 32px;
+}
+

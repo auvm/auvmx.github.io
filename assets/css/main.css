@@ -1,87 +1,277 @@
 :root{
-    --cool_orange: #EB6440;
-    --cool_yellow: #FECC01;
-    --teal: #497174;
-    --gray: #D6E4E5;
-    --snow: #EFF5F5;
+
+    /* https://colorhunt.co/palette/025464e57c23e8aa42f8f1f1 */
+    --blue_dark: #068DA9;
+    --light_blue: #ECF8F9;
+    --brown: #7E1717;
+    --orange: #E55807;
+    --ligh_pink: #F8F1F1;
+    
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
     margin: 0;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* display: flex;
+    flex-direction: column; */
     
 }
 
 header{
+    /* height of the header */
+    height: 55px;
+    background-color: var(--blue_dark);
+    position: fixed;
+    width: 100vw;
+ 
+}
+
+/* .gotop{
+    background-color: var(--blue_dark);
+    padding: 2%;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+} */
+
+/* begins menu icon  */
+
+.menu_icon{
+    display: inline-block;
+}
+
+.menu_icon img{
+    position: absolute;
+    left: 10px;
+    
+}
+
+/* begins menu display */
+
+.menu_container{
+    /* menu box container with every option */
+    position: fixed;
+    /* puts menu box cotainer under the navbar */
+    top: 55px;
+    
+    
+    
+    
+    height: 100vh;
+    width: 70vw;
+    /* max-width: 320px; */
+
+    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light_blue);
+    font-weight: bold;
+    border-radius: 0 0 3% 0;
+    
+}
+
+
+.options_list_menu a{
+    text-decoration: none;
+    color: var(--blue_dark);
+    
+}
+
+.options_list_menu li{
+    list-style: none;
+    padding: 24px 12px 24px 0;
+    font-size: larger;
+}
+
+
+
+
+
+/* begins main container */
+.container{
+    
+    
+}
+
+#presentation_image {
+    width: 100%;
+    max-width: 768px;
+}
+
+dt{
+    font-weight: 800;
+    font-size: large;
+    margin-top: 25px;
+}
+
+dd{
+    /* font-weight: 500; */
+    font-size: large;
+    margin-top: 15px;
+}
+.social_icons a{
+    display: block;
+}
+
+.social_icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inactive{
+    display: none;
+}
+
+
+/*begin section and card styles*/
+.info_section{
+    padding: 5%;
+    /* puts each section under the navbar */
+    padding-top: 55px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+}
+
+.section_title{
+    align-self: self-start;
+}
+.card{
+    margin-top: 25px;
+    padding: min(25px, 5%);
     
+    border-radius: 10px;
+    width: 85%;
+    /* max-width: 300px; */
+    
+    background-color: var(--light_blue);
+}
+
+.card_title{
+    text-decoration: none;
+    color: var(--blue_dark);
+}
+
+.mini_link{
+    text-decoration: none;
+    color: var(--blue_dark);
+}
+
+footer{
+    width: 100%;
+    height: 5vh;
+    max-height: 48px;
+    margin-top: 10vh;
+    background-color: var(--blue_dark);
+}
+
+
+/* -------- begins media queries  --------*/
+@media(min-width:758px){
+
+    .menu_icon{
+        display: none;
+    }
+    .menu_container{
+        display: none;
+    }
+    #personal_info_section{
+        height: 85vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+    #personal_info_section .section_title{
+        display: none;
+    }
+
+    #presentation_image{
+        max-width: 400px;
+        /* content: url("../../assets/pictures/name_2.png"); */
+        
+    }
+
+    .info_section{
+        flex-direction: column;
+    }
+    
+    .card{
+        
+        width: 60vw;
+        max-width: 950px;
+        /* space between each card */
+        margin-top: 30px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .card img{
+        width: 220px;
+        height: 130px;
+    }
+    .text_card{
+        margin-left: 25px;
+    }
+
+    header{
+        /* increase the header by 5px and make it flex to align the menu */
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* div for the unordered list */
+    .desktop_menu{
+        
+        
+    }
+
+    /* unordered list container */
+    .options_desktop_menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        
+        /* use this sizes to match with the width of each card */
+        width: 60vw;
+        max-width: 950px;
+        
+        /* delete default unordered list styles */
+        list-style: none;
+        padding: 0;
+
+    }
+    /* unordered list items */
+    .desktop_item_menu{
+
+        text-decoration: none;
+        color: var(--light_blue);
+        font-weight: bold;
+        font-size: large;
+
+        padding: 15px; 
+        
+    }
+
+    .info_section{
+        /* height: 100vh; */
+        /* puts each section under the desktop navbar */
+        padding-top: 60px;
+        
+    }
+    
+
     
 }
-
-
-
-figure{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-
-#profile_picture{
-    border-radius: 50%;
-    border: 4px solid var(--teal);
-}
-
-#name_logo{
-    padding-left: 40px;
-}
-
-.left_container{
-    padding-right: 40px;
-    width: 350px;
-}
-
-#line{
-    align-self: center;
-    height: 350px;
-    width: 5px;
-    background-color: var(--teal);
-    border-radius: 99px;
-    margin: 0 20px;
-}
-
-.right_container{
-    padding-left: 40px;
-    width: 350px;
-}
-
-
-dt{
-    font-size: large;
-    font-weight: bold;
-    padding-top: 25px;
-    padding-bottom: 15px;
-}
-
-#social_icons{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-#social_dt{
-    padding-bottom: 15px;
+@media(max-width:758px){
+    .desktop_menu{
+        display: none;
+    }
 }
