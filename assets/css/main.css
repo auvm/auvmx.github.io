@@ -147,7 +147,15 @@ dd{
     width: 85%;
     /* max-width: 300px; */
     
+    
     background-color: var(--light_blue);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    max-height: 220px;
+    align-self: center;
 }
 
 .card_title{
@@ -213,7 +221,7 @@ footer{
     }
     .card img{
         width: 220px;
-        height: 130px;
+        max-height: 150px;
     }
     .text_card{
         margin-left: 25px;
